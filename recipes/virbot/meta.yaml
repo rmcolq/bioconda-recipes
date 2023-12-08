@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: virbot
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/rmcolq/RNA_virus_detector/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2bbfaae78de2ffe4d3e704302aef0243c8fb17505c23e27637c0a1cb4bcf2efb
+  sha256: ed49c399fb725723986b2b2a46ae6494519d6db6ce696dd77068c3316645cc20
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: python -m pip install .
   run_exports:
     - {{ pin_subpackage('virbot', max_pin="x") }}
 
