@@ -9,7 +9,7 @@ source:
   sha256: 2bbfaae78de2ffe4d3e704302aef0243c8fb17505c23e27637c0a1cb4bcf2efb
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -35,4 +35,4 @@ about:
   home: https://github.com/GreyGuoweiChen/RNA_virus_detector
   license: MIT
   license_file: LICENSE
-  summary: VirBot: an RNA viral contig detector for metagenomic data
+  summary: VirBot RNA viral contig detector for metagenomic data
