@@ -20,8 +20,9 @@ requirements:
     - python >=3.7
     - pip
     - conda
-    - gitpython
     - git
+    - git-lfs
+    - GitPython
   run:
     - python >=3
     - prodigal >=2.6.3 
