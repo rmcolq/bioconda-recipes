@@ -27,6 +27,8 @@ requirements:
     - pandas >=1.5.2
     - git-lfs
     - conda
+    - gitpython
+    - git
 
 test:
   commands:
