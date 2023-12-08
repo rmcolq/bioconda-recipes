@@ -16,15 +16,15 @@ build:
     - {{ pin_subpackage('virbot', max_pin="x") }}
 
 requirements:
-  host:
-    - python >=3.7
+  build:
+    - python >=3.9
     - pip
     - conda
     - git
     - git-lfs
     - GitPython
   run:
-    - python >=3
+    - python >=3.9
     - prodigal >=2.6.3 
     - hmmer >=3.3.2
     - diamond >=2.0.15
