@@ -1,0 +1,38 @@
+{% set version = "1.0.0" %}
+
+package:
+  name: virbot
+  version: {{ version }}
+
+source:
+  url: https://github.com/rmcolq/RNA_virus_detector/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 2bbfaae78de2ffe4d3e704302aef0243c8fb17505c23e27637c0a1cb4bcf2efb
+
+build:
+  number: 2
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  host:
+    - python >=3.7
+    - pip
+  run:
+    - python>=3
+    - prodigal>=2.6.3 
+    - hmmer>=3.3.2
+    - diamond>=2.0.15
+    - pandas>=1.5.2
+    - git-lfs
+    - conda
+
+test:
+  commands:
+    - virbot -h
+    - virbot --input test/test_input.fa 
+
+about:
+  home: https://github.com/GreyGuoweiChen/RNA_virus_detector
+  license: MIT
+  license_file: LICENSE
+  summary: VirBot: an RNA viral contig detector for metagenomic data
