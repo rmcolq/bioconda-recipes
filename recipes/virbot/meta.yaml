@@ -22,12 +22,15 @@ requirements:
     - conda
     - git
     - git-lfs
+    - gitpython
+    - libuuid
   run:
     - python >=3.9
     - prodigal >=2.6.3 
     - hmmer >=3.3.2
     - diamond >=2.0.15
     - pandas >=1.5.2
+    - libuuid
 
 test:
   commands:
