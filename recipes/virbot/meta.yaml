@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install .
+  script: python -m pip install --no-build-isolation .
   run_exports:
     - {{ pin_subpackage('virbot', max_pin="x") }}
 
