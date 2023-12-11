@@ -20,6 +20,8 @@ requirements:
     - python >=3.9
     - pip
     - conda
+    - git
+    - git-lfs
   run:
     - python >=3.9
     - prodigal >=2.6.3 
