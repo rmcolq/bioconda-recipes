@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: virbot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/rmcolq/RNA_virus_detector/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ed49c399fb725723986b2b2a46ae6494519d6db6ce696dd77068c3316645cc20
+  sha256: 555f323555147597c0e064ae3b6dc05ed3593d0d5bb252cfe2718cc6cb557660
 
 build:
   number: 0
@@ -20,9 +20,6 @@ requirements:
     - python >=3.9
     - pip
     - conda
-    - git
-    - git-lfs
-    - GitPython
   run:
     - python >=3.9
     - prodigal >=2.6.3 
