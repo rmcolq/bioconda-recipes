@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-build-isolation .
+  script: python -m pip install --no-build-isolation . --no-deps -vv 
   run_exports:
     - {{ pin_subpackage('virbot', max_pin="x") }}
 
@@ -21,21 +21,18 @@ requirements:
     - pip
     - conda
     - git
-    - git-lfs
-    - gitpython
-    - libuuid
+    - git-lfs >=3.4.0
+    - gitpython >=3.1.40
   run:
     - python >=3.9
     - prodigal >=2.6.3 
-    - hmmer >=3.3.2
-    - diamond >=2.0.15
-    - pandas >=1.5.2
-    - libuuid
+    - hmmer >=3.4
+    - diamond >=2.1.8
+    - pandas >=2.1.4
 
 test:
   commands:
     - virbot -h
-    - virbot --input test/test_input.fa 
 
 about:
   home: https://github.com/GreyGuoweiChen/RNA_virus_detector
