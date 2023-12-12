@@ -1,4 +1,4 @@
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: virbot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/rmcolq/RNA_virus_detector/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5f8adb144cff54566d8d5a0d30e38a9a12a27c4c979d32416cc163671dca0fb0
+  sha256: 6eef6fa2a6f7cae7887fe706c6c831a80324e959f923cb596c60850ceabee1fa
 
 build:
   number: 0
