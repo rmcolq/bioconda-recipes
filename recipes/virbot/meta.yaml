@@ -25,14 +25,17 @@ requirements:
     - gitpython >=3.1.40
   run:
     - python >=3.9
+    - pip
+    - conda
+    - git
+    - git-lfs >=3.4.0
+    - gitpython >=3.1.40
     - prodigal >=2.6.3 
     - hmmer >=3.4
     - diamond >=2.1.8
     - pandas >=2.1.4
 
 test:
-  requirements:
-    - git-lfs
   commands:
     - virbot -h
 
